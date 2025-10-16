@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="A-LOGO.webp">
+   
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "t6CZM4zhuLBZ3oyuH",
+      });
+   })();
+</script>
+
+    
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">AA</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" >Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contacts">Contact</a>
+
+
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Abhinav A</h1>
+            <h3><span>Web Developer</span></h3>
+        
+
+            <div class="social-media">
+                <a href="https://linkedin.com/in/abhinav-a-934696202"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/ABHINAV9496"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/a_b.h.i._/"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            
+        </div>
+
+        <div class="home-img">
+            <img src="image.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>Web Developer</h3>
+            <p>Hi, I’m Abhinav, A passionate Web Developer who loves building clean, responsive, and user-friendly websites.
+            I specialize in front-end technologies like HTML, CSS, JavaScript.
+            I love solving coding challenges, learning new technologies, and growing as a developer every day.<br>
+       <br> Alongside web development, I also explore the world of data analytics, using tools like Python (Pandas, NumPy), Excel, and Power BI to turn data into clear, meaningful insights.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills-section">
+            <h1>Skills</h1><br><br>
+            
+
+            <div class="html-image">
+                <img src="html-image.png">
+            </div>
+            
+
+            <div class="python-image">
+                <img src="python.jpg">
+            </div>
+            
+            <div class="powerbi-image">
+                <img src="powerbi-image.jpg">
+
+            </div>
+
+            
+
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="projects-container">
+            <h1>Projects</h1><br><br>
+
+        </div>
+        <div class="first-project">
+         <img src="NAV BAR TASK/NAVBAR SCREENSHOT.png" alt="">
+        
+        
+        <div class="first-project-text">
+            <h2>W3Schools Navbar Clone</h2>
+            <br>
+            <p>
+                A W3Schools-inspired navigation bar created using HTML and CSS.<br>
+                This project focuses on understanding navbar structure, link styling, and hover effects.<br>
+                It’s a basic, non-responsive version that demonstrates my grasp of layout and design fundamentals using flexbox and CSS styling.
+                <br>
+            </p><br>
+            <div class="button">
+                <a href="NAV BAR TASK/W3  school navbar task.html" style="color: black;" target="_blank">Visit</a>
+            </div>
+
+        </div>
+            
+        </div>
+        <br>
+        <div class="second-project">
+             <img src="Clone project/Screenshot 2025-10-03 165506.png"  alt="">
+        
+        
+        <div class="second-project-text">
+            <h2>Ixigo Home Page</h2>
+            <br>
+            <p>
+                
+            A static clone of the Ixigo website built using HTML and CSS.
+            This project focuses on recreating the layout, colors, and design structure of the original Ixigo homepage.
+            It’s a non-responsive version, created to practice page layout, alignment, and styling using flexbox and CSS fundamentals.
+            </p><br>
+            <div class="second-button">
+                <a href="Clone project/newproject.html" style="color: black;" target="_blank">Visit</a>
+
+            </div>
+           
+
+        </div>
+        
+    </section>
+    <section class="contacts" id="contacts">
+            <h2 class="contact-heading">Contact<span>Me</span></h2>
+           
+            <form action="#">
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name" id="name">
+                        <input type="email" placeholder="Email" id="email">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="number" placeholder="Number" id="number">
+                        <input type="text" placeholder="Skills" id="skills">
+
+                    </div>
+                    
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="textarea" id="textarea" placeholder="Your Message" cols="30" rows="10"></textarea>
+                    <input type="button" value="Send Message" class="btn" onclick="sendMail()">
+                </div>
+
+
+            </form>
+            
+        </section>
+      
+<script src="script.js"></script>      
+</body>
+</html>

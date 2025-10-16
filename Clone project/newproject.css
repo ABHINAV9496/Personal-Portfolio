@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 85px;
+    padding: 0 40px;
+    border-bottom: 1px solid #e0e0e0;
+}  
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.header-right {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: 30px;
+    font-size: 1.5 rem;
+    font-weight: 500;
+    color: rgb(75, 73, 73); 
+}
+
+.header-right a {
+    margin-right: 10px;
+    color:rgb(59, 58, 58);
+    
+}
+
+.login-link {
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.login-link i{
+    color: #2f74c8;
+    font-size: 24px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 40px; 
+    row-gap: 15px;
+    
+}
+
+.flights, .hotels, .trains, .buses {
+    margin-right: 15px;
+}
+
+.flights a, .hotels a, .trains a, .buses a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 4px solid transparent;
+    color: rgb(103, 101, 101);
+}
+.flights a:hover{
+    color: black;
+}
+
+.hotels a:hover{
+    color: black;
+}
+
+.trains a:hover{
+    color: black;
+}
+
+.buses a:hover{
+    color: black;
+}
+
+
+
+.flights a img, .hotels a img, .trains a img, .buses a img {
+    width: 50px;
+    height: 50px;
+}
+
+.flights a { 
+    color: rgb(103, 101, 101);
+}
+
+.nav-info-text {
+    margin-left: auto; 
+    font-size: 14px;
+    color: #777;
+}
+
+
+.trip, .section, .another-section {
+    flex-basis: 100%; 
+}
+
+.trip {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip-type { display: flex; gap: 10px; }
+
+.onewaytrip, .roundwaytrip {
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.onewaytrip { 
+    background-color: #e7f2ff;
+    color: #495da4;
+    border-color: #0b69ff;
+}
+
+.text-right 
+{ font-size: 14px; 
+color: #555; 
+font-weight: bold; 
+}
+
+.from-to { display: flex; 
+width: 100%; 
+}
+
+.from-to input {
+    flex-grow: 1;
+    height: 56px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.from-to input:first-child { border-radius: 8px 0 0 8px; }
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 56px;
+    background-color: #f76f32;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+.fare { display: flex;
+align-items: center; }
+
+.seniorcitizen-fare:hover{
+    background-color: #bfc8d6;
+}
+
+.armedforce-fare:hover{
+    background-color: #bfc8d6;
+}
+
+.student-fare:hover{
+    background-color: #bfc8d6;
+}
+
+.special-fare { font-size: 14px; }
+
+.student-fare, .seniorcitizen-fare, .armedforce-fare {
+    padding: 8px 15px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancellation {
+    display: flex;
+    align-items: center;
+    background-color: #f0f8ff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.cancellation input[type="checkbox"] { width: 18px; height: 18px; margin-right: 10px; }
+.cancellation label { font-weight: bold; }
+.cancellation-info { margin-left: 20px; font-size: 13px; color: #555; }
+.cancellation-info div { display: inline-block; vertical-align: middle; margin: 0 4px; }
+
+
+.section, .another-section { margin-top: 20px; }
+.section-title, .another-section-title { font-size: 22px; font-weight: bold; margin-bottom: 15px; }
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    height: 145px;
+    padding: 15px 0;
+    border: 1px solid #e7e7e7;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+.service-item {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 12.5%;
+    
+}
+.service-item img { width: 48px; height: 48px;}
+
+.service-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: 25px;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+}
+.plus-badge {
+    background-color: #f76f32; 
+}
+.free-badge {
+    background-color: #0b69ff; 
+}
+
+.section-header { display: flex;
+justify-content: space-between; 
+align-items: center; 
+}
+
+.filters { display: flex; 
+align-items: center;
+ gap: 10px; 
+}
+
+ .filter-btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter-btn.active 
+{ background-color: #0b69ff; 
+color: #fff; 
+border-color: #0b69ff; }
+
+.view-all-link 
+{ color: #f76f32; 
+font-weight: bold; 
+font-size: 14px; }
+
+.offer-gallery 
+{ display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-top: 20px; 
+}
+
+.offer-gallery img 
+{ width: 255px; 
+height: 180px; 
+border-radius: 16px; 
+}
