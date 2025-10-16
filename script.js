@@ -12,7 +12,7 @@ function sendMail() {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         number: document.getElementById("number").value,
-        skills: document.getElementById("skills").value, 
+        skills: document.getElementById("skills2").value, 
         message: document.getElementById("textarea").value,
     };
 
@@ -24,4 +24,5 @@ function sendMail() {
         alert("Failed to send message. Please try again.");
         console.log("FAILED...", error);
     });
+
 }
